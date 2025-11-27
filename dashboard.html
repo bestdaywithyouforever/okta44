@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vialowspender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        
+        body {
+            background-color: #ffb7c5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+        .nav-home {
+            color: #ff6b95;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-logout {
+            background-color: #ff6b95;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(255, 107, 149, 0.4);
+            transition: 0.3s;
+        }
+        .nav-logout:hover { transform: scale(1.05); background-color: #ff477e; }
+
+        /* Container Utama */
+        .main-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 30px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Foto Profil */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #ff9ebb;
+            padding: 4px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Teks */
+        h1 { color: #ff6b95; font-size: 2rem; margin-bottom: 5px; }
+        h2 { color: #555; font-size: 1.1rem; font-weight: 400; margin-bottom: 30px; }
+        
+        .description {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1rem;
+            margin-bottom: 40px;
+            padding: 0 30px;
+            text-align: justify;
+        }
+
+        /* Tombol Sosmed */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            border-top: 2px dashed #ffe0e9;
+            padding-top: 30px;
+        }
+
+        .btn-sosmed {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tiktok {
+            background-color: #000;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        }
+
+        .btn-sosmed:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Responsif HP */
+        @media (max-width: 768px) {
+            .navbar { padding: 15px 20px; }
+            .card { padding: 30px 20px; }
+            .description { padding: 0; text-align: left; }
+            h1 { font-size: 1.5rem; }
+            .social-links { flex-direction: column; }
+            .btn-sosmed { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-home"><i class="fa-solid fa-house"></i> HOME</div>
+        <a href="index.html" class="nav-logout"><i class="fa-solid fa-heart"></i> LOGOUT</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="card">
+            
+            <img src="neko.png" alt="Profile" class="profile-img">
+            
+            <h1>Halo! Saya Siswa SMK Maarif</h1>
+            <h2>Kelas XI TJKT 2</h2>
+
+            <p class="description">
+                Halo semuanya, perkenalkan nama saya Riyanti Okta Pratiwi. Saya siswi kelas XI TJKT 2 di SMK. Saat ini saya sedang mendalami dunia Teknik Jaringan Komputer dan Telekomunikasi, karena saya tertarik dengan cara kerja jaringan, perangkat, dan teknologi yang terus berkembang. Saya berharap bisa terus belajar, menambah pengalaman, dan meningkatkan kemampuan saya di bidang IT. Semoga dengan bergabung di kelas ini, saya bisa lebih aktif, percaya diri, dan bermanfaat untuk teman-teman serta lingkungan sekolah.
+            </p>
+
+            <div class="social-links">
+               
+                <a href="https://www.tiktok.com/@iniiisiapaasiiii?_r=1&_d=dfhm6ke7317kde&sec_uid=MS4wLjABAAAAB8awOwjCnfoKJPPAvRO1-MWPYwP0UnQQMsGdsfw8ISc5yAYo97r3mCqvPO-j6Qz5&share_author_id=6898313617146496002&sharer_language=id&source=h5_t&u_code=dfhm6k6ika6ck9&timestamp=1764212797&user_id=6898313617146496002&sec_user_id=MS4wLjABAAAAB8awOwjCnfoKJPPAvRO1-MWPYwP0UnQQMsGdsfw8ISc5yAYo97r3mCqvPO-j6Qz5&item_author_type=1&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7538704317273392914&share_link_id=b2a2c05b-2c15-4c76-b7b6-4b83b29a6c72&share_app_id=1180&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1" target="_blank" class="btn-sosmed tiktok">
+                    <i class="fa-brands fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://www.instagram.com/xstraya_?igsh=MXYyM21zYWxlZm9yZg==" target="_blank" class="btn-sosmed instagram">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
